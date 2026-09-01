@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Registration Form</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f7;
+        }
+
+        h1 {
+            text-align: center;
+            color: #17365d;
+        }
+
+        form {
+            width: 600px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #aaa;
+        }
+
+        .field {
+            margin-bottom: 18px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 9px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        .radio,
+        .checkbox {
+            margin-right: 15px;
+        }
+
+        .buttons {
+            text-align: center;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 25px;
+            margin: 5px;
+            border: none;
+            background-color: #17365d;
+            color: white;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<h1>Online Bookstore Registration</h1>
+
+<form>
+
+    <!-- Name -->
+
+    <div class="field">
+
+        <label>Name</label>
+
+        <input type="text"
+               name="name"
+               placeholder="Enter your name">
+
+    </div>
+
+
+    <!-- Password -->
+
+    <div class="field">
+
+        <label>Password</label>
+
+        <input type="password"
+               name="password"
+               placeholder="Enter password">
+
+    </div>
+
+
+    <!-- Email -->
+
+    <div class="field">
+
+        <label>E-mail</label>
+
+        <input type="email"
+               name="email"
+               placeholder="example@gmail.com">
+
+    </div>
+
+
+    <!-- Phone Number -->
+
+    <div class="field">
+
+        <label>Phone Number</label>
+
+        <input type="text"
+               name="phone"
+               placeholder="Enter phone number">
+
+    </div>
+
+
+    <!-- Sex -->
+
+    <div class="field">
+
+        <label>Sex</label>
+
+        <input type="radio"
+               name="sex"
+               value="Male"
+               class="radio">
+
+        Male
+
+        <input type="radio"
+               name="sex"
+               value="Female"
+               class="radio">
+
+        Female
+
+        <input type="radio"
+               name="sex"
+               value="Other"
+               class="radio">
+
+        Other
+
+    </div>
+
+
+    <!-- Date of Birth -->
+
+    <div class="field">
+
+        <label>Date of Birth</label>
+
+        <select name="day">
+
+            <option value="">Day</option>
+
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+            <option>25</option>
+            <option>26</option>
+            <option>27</option>
+            <option>28</option>
+            <option>29</option>
+            <option>30</option>
+            <option>31</option>
+
+        </select>
+
+
+        <select name="month">
+
+            <option value="">Month</option>
+
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+            <option>October</option>
+            <option>November</option>
+            <option>December</option>
+
+        </select>
+
+
+        <select name="year">
+
+            <option value="">Year</option>
+
+            <option>2000</option>
+            <option>2001</option>
+            <option>2002</option>
+            <option>2003</option>
+            <option>2004</option>
+            <option>2005</option>
+            <option>2006</option>
+            <option>2007</option>
+            <option>2008</option>
+            <option>2009</option>
+            <option>2010</option>
+
+        </select>
+
+    </div>
+
+
+    <!-- Languages -->
+
+    <div class="field">
+
+        <label>Languages Known</label>
+
+        <input type="checkbox"
+               name="language"
+               value="English"
+               class="checkbox">
+
+        English
+
+
+        <input type="checkbox"
+               name="language"
+               value="Telugu"
+               class="checkbox">
+
+        Telugu
+
+
+        <input type="checkbox"
+               name="language"
+               value="Hindi"
+               class="checkbox">
+
+        Hindi
+
+
+        <input type="checkbox"
+               name="language"
+               value="Tamil"
+               class="checkbox">
+
+        Tamil
+
+    </div>
+
+
+    <!-- Address -->
+
+    <div class="field">
+
+        <label>Address</label>
+
+        <textarea name="address"
+                  placeholder="Enter your address"></textarea>
+
+    </div>
+
+
+    <!-- Buttons -->
+
+    <div class="buttons">
+
+        <input type="submit"
+               value="Register">
+
+        <input type="reset"
+               value="Reset">
+
+    </div>
+
+</form>
+
+</body>
+
+</html>
