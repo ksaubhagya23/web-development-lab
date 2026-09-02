@@ -3,49 +3,41 @@
 <head>
     <title>Login</title>
 
-    <style>
-        body {
-            font-family: Arial;
-            background-color: #f4f6f8;
-            text-align: center;
-        }
-
-        form {
-            background: white;
-            width: 350px;
-            margin: 60px auto;
-            padding: 25px;
-            border-radius: 10px;
-        }
-
-        input {
-            width: 90%;
-            padding: 10px;
-            margin: 10px;
-        }
-
-        button {
-            padding: 10px 30px;
-            background-color: #17365d;
-            color: white;
-            border: none;
-        }
-    </style>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../script.js"></script>
 </head>
 
 <body>
+    <header>
+        <h1>Online Book Store</h1>
+    </header>
 
-<h2>Online Bookstore Login</h2>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="registration.html">Registration</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="cart.html">Cart</a>
+    </nav>
 
-<form>
+    <main>
+        <form id="loginForm">
+            <h2>Login</h2>
 
-    <input type="text" placeholder="Username">
+            <label>Username</label>
+            <input type="text" id="username" placeholder="Enter username">
 
-    <input type="password" placeholder="Password">
+            <label>Password</label>
+            <input type="password" id="password" placeholder="Enter password">
 
-    <button type="submit">Login</button>
+            <br><br>
 
-</form>
+            <input type="submit" value="Login">
+        </form>
+    </main>
 
+    <footer>
+        <p>© <span class="current-year"></span> Online Book Store</p>
+    </footer>
 </body>
 </html>
